@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      function App() {
+        return (
+          <main>
+            <section>
+              <header>
+                <h1>Sally Student Resume</h1>
+                <h2>Impossible is nothing</h2>
+                <address>
+                  Email:{" "}
+                  <a href={"mailto:SallyStudent@geemail.com"} target={"_blank"}>
+                    sallystudent@geemail.com
+                  </a>
+                </address>
+                <address>Phone: (555) 267-8433</address>
+                <img
+                  src={
+                    "https://live.staticflickr.com/4092/5091146915_5afba4a0eb.jpg"
+                  }
+                  alt={"A picture of Sally Student and not Edie Sedgwick"}
+                />
+              </header>
+            </section>
+            <section>
+              <h2>Experience</h2>
+              <h3>Teacher</h3>
+              <h4>Sic Transit Gloria Company</h4>
+              <aside>2011-2014</aside>
+              <p>
+                Tellus mauris a diam maecenas sed. Non tellus orci ac auctor
+                augue. Egestas dui id ornare arcu odio. Tellus id interdum velit
+                laoreet id donec ultrices tincidunt arcu. Vitae ultricies leo
+                integer malesuada nunc vel risus. Mattis aliquam faucibus purus
+                in.
+              </p>
+              <ul>
+                <li>$30k attis aliquam</li>
+                <li>Managed sit amet porttitor eget dolor morbi</li>
+                <li>Only cried once</li>
+              </ul>
+              <h3>Professional Meme Maker</h3>
+              <h4>Memes Inc.</h4>
+              <aside>2014-2019</aside>
+              <p>
+                Velit sed ullamcorper morbi tincidunt ornare massa. A erat nam
+                at lectus urna duis. Phasellus faucibus scelerisque eleifend
+                donec pretium. Neque egestas congue quisque egestas diam in arcu
+                cursus. Pellentesque id nibh tortor id aliquet lectus proin.
+              </p>
+              <ul>
+                <li>
+                  Vitae tortor condimentum lacinia quis vel eros donec ac odio
+                </li>
+                <li>Nullam vehicula ipsum a arcu cursus</li>
+                <li>
+                  Proin sed libero enim sed faucibus. Amet facilisis magna etiam
+                  tempor
+                </li>
+                <li>Nibh cras pulvinar mattis nunc</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Education</h2>
+              <h3>New York University</h3>
+              <aside>2006-2011</aside>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <h4>Accolades:</h4>
+              <ul>
+                <li>Kicked a bowling ball over a fence twice</li>
+                <li>1st place in couch surfing competition</li>
+                <li>Established notorious professional rail sliding club</li>
+              </ul>
+            </section>
+          </main>
+        );
+      } // Nested elements inside the App ReactDOM.render
+      ReactDOM.render(<App />, document.querySelector("#application-root"));
+    </script>
+  </body>
+</html>

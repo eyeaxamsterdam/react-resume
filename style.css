@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.app-class {
+  color: red;
+}
+
+html {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
